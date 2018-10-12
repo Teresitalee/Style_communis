@@ -1,40 +1,239 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mejor Municipio||Creando el barrio que queremos!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/semantic.css" />
-    <script src="assets/js/semantic.js"></script>
-</head>
-<body>
-        <div class="ui secondary vertical pointing menu">
-                <a class="active item">
-                  Home
-                </a>
-                <a class="item">
-                  Messages
-                </a>
-                <a class="item">
-                  Friends
-                </a>
-              </div>
-             
-              <img class="ui centered circular small image" src="assets/img/2005.jpg">
-
-<div class="ui four column grid">
-        <div class="row ui centered">
-                <div class="column">
-                    <h1>Mejor Municipio</h1>
-                    <h2>Creando el barrio que queremos</h2>
-                
-            
-              <button class="positive centered ui button">Siguenos!!</button>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Mejor Municipio | Creando el barrio que queremos!</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- links estilos propios y semantic -->
+      <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+      <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+      <link rel="shortcut icon" href="assets/img/ico.png">
+      <link rel="stylesheet" href="semantic/dist/semantic.min.css">
+      <!-- scripts -->
+      <script src="semantic/dist/semantic.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+         crossorigin="anonymous"></script>
+      <script src="assets/js/semantic.js"></script>
+   </head>
+   <body class="ui segment massive">
+      <!-- menu toggle -->
+      <div class="ui sidebar vertical left inverted menu">
+         <div class="header item">
+            <h3 class="building icon">MENU</h3>
+         </div>
+         <a class="item">
+         <i href="#" class="home icon"></i>
+         Home
+         </a>
+         <a class="item">
+         <i href="#" class="book icon"></i>
+         Termino & Condiciones
+         </a>
+      </div>
+      <!-- menu toggle -->
+      <div class="ui basic icon top fixed menu">
+         <a id="toggle" class="item">
+         <i class="bars icon"></i> MENU
+         </a>
+      </div>
+      <!-- started -->
+      <section class="ui stackable center aligned grid container view">
+         <div class="pusher">
+            <div class="ui two column centered grid">
+               <div class="column">
+                  <img class="ui centered  middle image" src="assets/img/Sin título-3.png">
+               </div>
+               <div class="four column centered row">
+                  <h1 class="ui large header"> Mejor Municipio</h1>
+                  <span> " Creando el barrio que queremos " </span>
+                  <br>
+                  <h4>en que podemos ayudarte?</h4>
+                  <br>
+                  <button class="ui massive purple button" href="#marker" id="btn">¿ Comenzamos ? </button>
+               </div>
             </div>
-        </div>
-    </div>
-
-
-</body>
+         </div>
+      </section>
+      <!-- comenzando ubicacion  -->
+      <section class="ui stackable center aligned grid container view" id="marker">
+         <div class="ui card fluid">
+            <div class="content">
+               <div class="header">
+                  <h2 class="ui icon header">
+                     <i class="marker icon"></i>
+                     <div class="content">
+                        Hola !
+                        <div class="sub header">Para comenzar necesitamos el acceso de tu ubicación.</div>
+                     </div>
+                  </h2>
+               </div>
+               <div class="meta">
+                  Desde tu celular debes habilitar GPS
+               </div>
+            </div>
+            <div class="content extra">
+               <button class="ui brown large right labeled icon button huge" href="Mylocation">
+               <i class="left marker icon"></i>
+               Mi ubicación
+               </button>
+            </div>
+         </div>
+         <div class="ui stackable center aligned grid container view info icon message" id="info">
+            <i class="info circle icon"></i>
+            <span class="content">
+            Es muy importante que elijas la ubicación correcta, para una mejor atención.
+            </span>
+         </div>
+         <div class="content extra big ">
+            <button class="ui green large right labeled icon button huge " id="btn2">
+            <i class="arrow right icon"></i>
+            Continuar . . . .
+            </button>
+         </div>
+      </section>
+      <!-- barra de buscador location -->
+      <section class="ui stackable center aligned grid container view">
+         <div class="ui three column grid">
+            <div class="row stackable center aligned grid">
+               <div class="column ui action vertical input"></div>
+               <input type="text" placeholder="Buscar...">
+               <button class="ui blue button">IR</button>
+            </div>
+            <!-- mapa -->
+            <div class="pusher" >
+               <div id="map"></div>
+            </div>
+            <!-- btn continuar -->
+            <div class="content extra big ">
+               <button class="ui green large right labeled icon button huge " id="btn3">
+               <i class="arrow right icon"></i>
+               Continuar . . . .
+               </button>
+            </div>
+         </div>
+      </section>
+      <!-- municipalidades -->
+      <section class="ui stackable center aligned grid container view">
+         <div class="ui three column doubling stackable grid container">
+            <div class="column">
+            </div>
+            <img class="ui stackable center aligned rounded image" src="assets/img/banner-estacion.jpg">
+            <div class="ui inverted segment">
+               <h4 class="ui horizontal inverted divider">
+                  ESTACIÓN CENTRAL
+               </h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat officia quam, ab delectus, quaerat deserunt architecto vero eligendi assumenda consequatur repellendus dolor voluptatem eaque harum et ullam magni corrupti?</p>
+               <div class="ui inverted divider"></div>
+               <p></p>
+            </div>
+            <div class="ui red segment">
+               <i class="left info circle icon"></i>
+               <p class="ui horizontal inverted">Si quieres cambiar la ubicación, categoría o sub categoría presiona sobre la etiqueta para volver a seleccionar.</p>
+               <div class="ui inverted divider"></div>
+            </div>
+            <!-- links servicios  -->
+            <div class="ui grid  ">
+               <div class="five wide column ">
+                  <div class="ui red inverted segment ">
+                     <img class="ui square centered small image" src="assets/img/salud.png" >
+                  </div>
+                  <h3>Salud</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui green inverted segment">
+                     <img class="ui square centered small image" src="assets/img/educacion.png">
+                  </div>
+                  <h3>Educación</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui black inverted segment">
+                     <img class="ui square centered small image" src="assets/img/warning.png">
+                  </div>
+                  <h3>Seguridad & emergencias </h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Deportes</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Social</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Tránsito</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Mascotas</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Otras solicitudes</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Alcaldia</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Aseo & medio ambiente</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Servicios básicos</h3>
+               </div>
+               <div class="five wide column">
+                  <div class="ui yellow inverted segment">
+                     <img class="ui square centered small image" src="assets/img/salud.png">
+                  </div>
+                  <h3>Vía Pública & señalética</h3>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="ui fluid absolute stackable container grid">
+            <div class="ui sixteen column" id="foot">
+               <p> Todos los derechos reservados | 2018 | TM</p>
+            </div>
+         </div>
+      </footer>
+      <!-- scripts js -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC20sRgcmVZ3FPbWcuqkRYUBVhlAQgdyPA&libraries=places&callback=initMap" async defer></script>
+      <script src="assets/js/app.js"></script> 
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC20sRgcmVZ3FPbWcuqkRYUBVhlAQgdyPA&libraries=places&callback=initMap" async defer></script>
+      <script>
+         $('#toggle').click(function () {
+           $('.ui.sidebar').sidebar('toggle');
+         })
+      </script>
+      <script>
+         $('.reverse.images .image')
+         .transition({
+           animation : 'pulse',
+           reverse   : true,
+           interval  : 200
+         })
+         ;
+      </script>
+   </body>
 </html>
